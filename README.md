@@ -12,6 +12,28 @@
 ## Demo
 https://marcinbawolik.github.io/Tasks-list-react/
 
+## Technologies used 
+
+- React.js
+- HTML
+- CSS in BEM Convention
+- Grid
+- Flexbox
+- Transution
+- Transform
+- @media queries
+- Pseudo classes
+- JavaScript
+- Arrow functions
+- Callbacks
+- Objects
+- Arrays
+- Immutability
+- React
+- Node
+- JSX
+- Webpack
+- Babel
 
 # Getting Started with Create React App
 
