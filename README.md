@@ -3,13 +3,17 @@
 *Hi everyone!* \
  I made this tasks-list to no more forget about diffrent things. \
  Use it if you are forgetful. 😀
- 
- *Interactions do not work in the tasks list yet*
- 
 
 ![tasksList](https://media1.giphy.com/media/kLOkqcrdC5mrCE7k7G/giphy.gif?cid=ecf05e47cgmt57ktqydw24b84cg7b5o6c1apc6n5e7u5z7vm&rid=giphy.gif&ct=g)
 
 ## Demo
+
+
+
+https://user-images.githubusercontent.com/120460201/214068549-e92ca876-b3c3-4ec7-acc6-34c81d016913.mp4
+
+
+
 https://marcinbawolik.github.io/Tasks-list-react/
 
 ## Technologies used 
