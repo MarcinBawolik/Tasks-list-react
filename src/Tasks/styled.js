@@ -1,7 +1,5 @@
 import styled, { css } from "styled-components";
 
-
-
 export const List = styled.ul`
     list-style: none;
     margin: 0px;
@@ -12,11 +10,11 @@ export const Item = styled.li`
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
-    border-bottom: solid rgb(230, 227, 227) 1px;
+    border-bottom: solid ${({ theme }) => theme.color.alto} 1px;
     padding: 10px;
     align-items: center;
 
-    ${({hidden}) => hidden && css`
+    ${({ hidden }) => hidden && css`
         display: none;
     `}
 `;
@@ -32,7 +30,7 @@ export const Button = styled.button`
     height: 30px;
     width: 30px;
     transition: 1s;
-    ${({toggleDone}) => toggleDone && css`
+    ${({ toggleDone  }) => toggleDone && css`
         background-color: rgb(29, 179, 29);
 
         &:hover{

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
     margin: 10px 0;
-    background-color: white;
+    background-color: ${({ theme }) => theme.color.white};
 `;
 
 export const SectionHeader = styled.header`
@@ -10,16 +10,16 @@ export const SectionHeader = styled.header`
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid rgb(230, 227, 227) 1px;
+    border-bottom: solid ${({ theme }) => theme.color.alto} 1px;
 
-    @media (max-width: 767px) 
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) 
     {   
         grid-template-columns: 1fr;  
     }
 `;  
 
 export const SectionTitle = styled.h2`
-    border-bottom: solid rgb(230, 227, 227) 1px;
+    border-bottom: solid ${({ theme }) => theme.color.alto} 1px;
     font-size: 20px;
     padding: 20px;
     margin: 0;

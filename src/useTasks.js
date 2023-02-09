@@ -4,10 +4,12 @@ export const useTasks = () => {
     const [tasks, setTasks] = useState(
         JSON.parse(localStorage.getItem("tasks")) || []
         );
-      useEffect(() => {
+      
+        useEffect(() => {
         localStorage.setItem("tasks", JSON.stringify(tasks))
       }, [tasks]);
-    const removeTasks = (id) => {
+    
+      const removeTasks = (id) => {
       setTasks(tasks => tasks.filter(task => task.id !== id));
     };
   
@@ -38,7 +40,8 @@ export const useTasks = () => {
         },
       ]);
     };
-  return {
+  
+    return {
     tasks,
     removeTasks,
     toggleTaskDone,
