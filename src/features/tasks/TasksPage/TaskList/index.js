@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { removeTask, selectHideDone, selectTasksByQuery, toggleTaskDone } from "../../tasksSlice";
 import searchQueryParamName from "../searchQueryParamName";
-import { List, Item, Content, Button } from "./styled";
+import { List, Item, Content, Button, Link } from "./styled";
 
 const TaskList = () => {
 const location = useLocation();
