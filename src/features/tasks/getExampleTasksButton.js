@@ -1,14 +1,17 @@
-import { fetchExampleTasks } from "./tasksSlice"
-import { useDispatch } from "react-redux"
+import { fetchExampleTasks, selectLoading } from "./tasksSlice"
+import { useDispatch, useSelector } from "react-redux"
 import FunctionalButton from "./FunctionalButton";
 
 
 
 const GetExampleTasksButton = () => {
     const dispatch = useDispatch();
-    return <FunctionalButton onClick={() => dispatch(fetchExampleTasks())}>
-                Pobierz przykładowe zadania
-            </FunctionalButton>
+    const loading = useSelector(selectLoading)
+    return <FunctionalButton disabled={loading} onClick={() => dispatch(fetchExampleTasks())}>
+        {
+            loading ? "Ładowanie..." : "Pobierz przykładowe zadania"
+        }
+    </FunctionalButton>
 };
 
 export default GetExampleTasksButton;
